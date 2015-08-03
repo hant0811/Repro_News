@@ -1,5 +1,5 @@
 <?php
-	$site_path = "http://localhost/php_news/";
+	$site_path = "http://localhost/repro_news/";
 	define ('SITE_PATH', $site_path);
 	define ('CONTROLLER_PATH',"controllers/");
 	define ('VIEW_PATH',"views/");
