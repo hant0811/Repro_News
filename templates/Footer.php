@@ -13,7 +13,7 @@
 			</div>
 
 			<div id="logo-footer">
-				<img src="<?php echo SITE_PATH ?>public/public/images/logo-footer.png" alt="">
+				<img src="<?php echo SITE_PATH ?>public/public/images/logo.png" alt="">
 			</div>
 
 		</div>
@@ -21,8 +21,8 @@
 	</footer><!--END FOOTER-->
 	<div id="footer-bottom">
 		<div class="wrapper"> 
-			<p id="copyright">Copyright 2010 Repro. All Rights Reserved.</p>
-			<p id="author">Powered by WordPress. Repro theme by Orman</p>
+			<p id="copyright">Copyright Thái Hà.</p>
+			<p id="author">Đây là Project đầu tiên của Thái Hà</p>
 		</div>
 			
 	</div>

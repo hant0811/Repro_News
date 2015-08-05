@@ -33,7 +33,7 @@
 					$this->data['parent'] = $_POST['category'];
 					$this->model->addCat($this->data);
 					$this->view->msg = "Add category successfully";
-					$this->view->redirect('category/listCategory');
+					$this->view->redirect('listcategory');
 				}
 				}else {
 					$this->view->renderAdmin("category/addcategory");
@@ -71,7 +71,7 @@
 						$this->data['catname'] = mysqli_real_escape_string($this->model->connect,$_POST['catname']);
 						$this->data['parent'] = $_POST['category'];
 						if($this->model->editCat($this->data, $id) == true){
-							$this->view->redirect('category/listcategory');
+							$this->view->redirect('listcategory');
 						} else {
 							$this->view->msg = "Edit category faild";
 							$this->view->renderAdmin('category/editcategory');

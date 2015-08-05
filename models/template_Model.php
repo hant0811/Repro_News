@@ -23,6 +23,11 @@
 	    	$sql = "SELECT title, content FROM pages ORDER BY ID DESC LIMIT 3";
 	    	return $this->db_select($sql);
 	    }
+
+	    public function getHeader(){
+	    	$sql = "SELECT cat_title, ID FROM categories";
+	    	return $this->db_select($sql);
+	    }
 	}
 
  ?>

@@ -8,15 +8,15 @@
             <li >
                 <a href="#"><i class='fa fa-link'></i> <span> Post </span></a>
                 <ul class="treeview-menu">
-                    <li ><a href="<?php echo SITE_PATH ?>news/listnewsadmin"> List post </a></li>
-                    <li ><a href="<?php echo SITE_PATH ?>news/addnews"> Add new post </a></li>
+                    <li ><a href="<?php echo SITE_PATH ?>listpost"> List post </a></li>
+                    <li ><a href="<?php echo SITE_PATH ?>addpost"> Add new post </a></li>
                 </ul>
             </li>
             <li >
                 <a href="#"><i class='fa fa-link'></i> <span> Category </span></a>
                 <ul class="treeview-menu">
-                    <li class="<?php if($this->title == 'Driver') echo 'active'; ?>"><a href="<?php echo SITE_PATH ?>category/listcategory"> List category </a></li>
-                    <li class="<?php if($this->title == 'Search Driver') echo 'active'; ?>"><a href="<?php echo SITE_PATH ?>category/addcategory"> Add new category </a></li>
+                    <li class="<?php if($this->title == 'Driver') echo 'active'; ?>"><a href="<?php echo SITE_PATH ?>listcategory"> List category </a></li>
+                    <li class="<?php if($this->title == 'Search Driver') echo 'active'; ?>"><a href="<?php echo SITE_PATH ?>addcategory"> Add new category </a></li>
                 </ul>
             </li>
           </ul>

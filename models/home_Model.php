@@ -5,7 +5,7 @@
 	    }
 
 	    public function getCategoryHomePage() {
-			$sql = "Select * from categories limit 4";
+			$sql = "Select * from categories";
 			$category = $this->db_select($sql);
 			$result  = array(
 				'');

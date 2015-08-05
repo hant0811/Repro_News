@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+<script src="<?php echo SITE_PATH ?>public/public/js/ajax.js"></script>
       <div class="content-wrapper">
         <!-- Main content -->
         <section class="content">
@@ -26,7 +26,7 @@
                           <td> <?php echo $cat['cat_title'] ?> </td>
                           <td> <?php echo $cat['username'] ?> </td>
                           <td> <a href="<?php echo SITE_PATH . 'category/editCategory/' . $cat['ID'] ?>"> Edit </a> </td>
-                          <td> <a onclick="return confirm('Are you sure?')" id="<?php echo $cat['ID'] ?>" class='remove' href=''> Delete </a> </td>
+                          <td> <a id="<?php echo $cat['ID'] ?>" onclick="return confirm('Are you sure?')" id="<?php echo $cat['ID'] ?>" class='remove' href=''> Delete </a> </td>
                         </tr>
                       <?php } ?>                  
                     </tbody>

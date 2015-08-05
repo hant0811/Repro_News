@@ -29,7 +29,7 @@
                 <div class="icon">
                   <i class="ion ion-ios-list-outline"></i>
                 </div>
-                <a href="<?php echo SITE_PATH ?>/index.php?controller=category&action=showcat" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo SITE_PATH ?>category/listcategory" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -42,7 +42,7 @@
                 <div class="icon">
                   <i class="ion ion-ios-paper-outline"></i>
                 </div>
-                <a href="<?php echo SITE_PATH ?>index.php?controller=post&action=listpost" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo SITE_PATH ?>news/listnewsadmin" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">

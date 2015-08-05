@@ -4,6 +4,13 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^tin-tuc/(.*)/(.*)$ index.php?controller=news&action=news&id=$1&slug=$2 [QSA,L]
+RewriteRule ^category/(.*)/(.*)$ index.php?controller=category&action=$1&id=$2 [QSA,L]
 RewriteRule ^category/(.*)$ index.php?controller=category&action=category&id=$1 [QSA,L]
-RewriteRule ^([^/]+)/([^/]+)$ index.php?controller=$1&action=$2
-RewriteRule ^([^/]+)/([^/]+)/([^/]+)$ index.php?controller=$1&action=$2&id=$3
+RewriteRule ^addcategory$ index.php?controller=category&action=addcategory [QSA,L]
+RewriteRule ^listcategory$ index.php?controller=category&action=listcategory [QSA,L]
+RewriteRule ^listpost$ index.php?controller=news&action=listnewsadmin [QSA,L]
+RewriteRule ^addpost$ index.php?controller=news&action=addnews [QSA,L]
+
+RewriteRule ^news/(.*)/(.*)$ index.php?controller=news&action=$1&id=$2 [QSA,L]
+RewriteRule ^dashboard$ index.php?controller=dashboard&action=index [QSA,L]
+RewriteRule ^register$ index.php?controller=register [QSA,L]

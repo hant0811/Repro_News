@@ -13,6 +13,7 @@
 				$this->recent = $this->template->getRecentInSideBar();
 				$this->popular = $this->template->getPopularInSideBar();
 				$this->footer = $this->template->getPageFooter();
+				$this->header = $this->template->getHeader();
 				require_once TEMPLATES_PATH."Header.php";
 				require(VIEW_PATH.$link.".php");
 				require_once TEMPLATES_PATH."Sidebar.php";

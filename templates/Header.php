@@ -34,7 +34,7 @@
                         <?php 
                             if($_SESSION['role'] == 'Admin') {
                                 ?>
-                                    <li><a href="<?php echo SITE_PATH ?>dashboard/index"> Admin  </a></li>
+                                    <li><a href="<?php echo SITE_PATH ?>dashboard"> Admin  </a></li>
                                 <?php
                             }
                         ?>
@@ -44,7 +44,7 @@
                         }
                         else {
                     ?>
-                        <li><a href="<?php echo SITE_PATH ?>user/register"> Register  </a></li>
+                        <li><a href="<?php echo SITE_PATH ?>register"> Register  </a></li>
                         <li><a href="<?php echo SITE_PATH ?>user/login"> Login  </a></li>
                     <?php 
                         }
@@ -69,26 +69,9 @@
         <div id="main-menu" class="group">
             <ul>
                 <li><a href="<?php echo SITE_PATH ?>">Home</a></li>
-                <li><a href="#">Nhịp sống trẻ</a>
-                    <ul>
-                        <li><a href="#">Tình Yêu</a></li>
-                        <li><a href="#">Công Nghệ</a></li>
-                        <li><a href="#">Xe ++</a></li>
-                        <li><a href="#">Giải trí</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Du Lịch</a></li>
-                <li><a href="#">Kinh Doanh</a></li>
-                <li><a href="#">Thể thao</a></li>
-                <li><a href="#">Văn Hóa</a>
-                    <ul>
-                        <li><a href="#">Thế giới</a></li>
-                        <li><a href="#">Việt Nam</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Sức Khỏe</a></li>
-                <li><a href="#">Chuyện Lạ</a></li>
-                <li><a href="#">Pháp Luật</a></li>
+                <?php foreach($this->header as $category) { ?>
+                <li><a href="<?php echo SITE_PATH . "category/" . $category['ID']; ?>"><?php echo $category['cat_title'] ?></a>
+                <?php } ?>
             </ul>
         </div><!--END MAIN-MENU-->
     </header><!--END HEADER-->

@@ -104,7 +104,7 @@
 
 					if(empty($error)){
 						$this->model->addPost($data);
-						$this->view->redirect('news/addnews');
+						$this->view->redirect('addpost');
 					}else {
 						$this->view->renderAdmin("news/addnews");
 					}
@@ -190,6 +190,10 @@
 			else {
 				$this->view->render("user/index");
 			}
+		}
+
+		public function delete($id){
+			$this->model->delete($id);
 		}
 	}
 ?>

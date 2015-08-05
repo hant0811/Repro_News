@@ -80,6 +80,10 @@
                                          ), $id);
         }
 
+        public function delete($id){
+            return $this->db_delete_by_id('news', $id);
+        }
+
     }
 ?>
 
