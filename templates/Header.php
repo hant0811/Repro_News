@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>  <?php echo $this->title; ?> </title>
-    <link rel="stylesheet" href="<?php echo SITE_PATH ?>public/public/css/jquery.videocontrols.css">
-    <link rel="stylesheet" href="<?php echo SITE_PATH ?>public/public/css/style.css">
-    <link rel="stylesheet" href="<?php echo SITE_PATH ?>public/public/css/slide.css">
+    <link rel="stylesheet" href="<?=SITE_PATH ?>public/public/css/jquery.videocontrols.css">
+    <link rel="stylesheet" href="<?=SITE_PATH ?>public/public/css/style.css">
+    <link rel="stylesheet" href="<?=SITE_PATH ?>public/public/css/slide.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="<?php echo SITE_PATH ?>public/public/js/jquery.js" type="text/javascript"></script>
+    <script src="<?=SITE_PATH ?>public/public/js/jquery.js" type="text/javascript"></script>
 
-    <script src="<?php echo SITE_PATH ?>public/public/js/jquery.videocontrols.js" type="text/javascript"></script>
+    <script src="<?=SITE_PATH ?>public/public/js/jquery.videocontrols.js" type="text/javascript"></script>
 
     
 </head>

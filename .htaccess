@@ -2,6 +2,7 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(css|js)$
 
 RewriteRule ^tin-tuc/(.*)/(.*)$ index.php?controller=news&action=news&id=$1&slug=$2 [QSA,L]
 RewriteRule ^category/(.*)/(.*)$ index.php?controller=category&action=$1&id=$2 [QSA,L]
@@ -14,3 +15,4 @@ RewriteRule ^addpost$ index.php?controller=news&action=addnews [QSA,L]
 RewriteRule ^news/(.*)/(.*)$ index.php?controller=news&action=$1&id=$2 [QSA,L]
 RewriteRule ^dashboard$ index.php?controller=dashboard&action=index [QSA,L]
 RewriteRule ^register$ index.php?controller=register [QSA,L]
+RewriteRule ^user/(.*)$ index.php?controller=user&action=$1 [QSA,L]

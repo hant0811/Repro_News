@@ -8,7 +8,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 
 
-	var duong_dan='http://localhost/php_news/public/public/theme/plugins/';
+	var duong_dan='http://localhost/repro_news/public/public/theme/plugins/';
     config.filebrowserBrowseUrl         =duong_dan+ 'ckfinder/ckfinder.html';
     config.filebrowserImageBrowseUrl  	=duong_dan+ 'ckfinder/ckfinder.html?type=Images';
     config.filebrowserFlashBrowseUrl 	=duong_dan+ 'ckfinder/ckfinder.html?type=Flash';

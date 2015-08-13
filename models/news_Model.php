@@ -49,7 +49,7 @@
             return $this->db_select($sql);
         }
         public function addPost($data){
-            $uid = Session::get('ID');
+            $uid = Session::get('user');
             $this->db_insert('news', array(
                                             'news_title' => $data['title'],
                                             'image' => $data['image'],
@@ -74,7 +74,7 @@
                                             'image' => $data['image'],
                                             'content' => $data['content'],
                                             'category_ID' => $data['category'],
-                                            'user_id' => $uid,
+                                            'user_ID' => $uid,
                                             'status' => $data['status'],
                                             'date' => date('Y-m-d H:i:s')    
                                          ), $id);

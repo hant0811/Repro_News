@@ -104,7 +104,7 @@
 
 					if(empty($error)){
 						$this->model->addPost($data);
-						$this->view->redirect('addpost');
+						$this->view->redirect('listpost');
 					}else {
 						$this->view->renderAdmin("news/addnews");
 					}
@@ -179,7 +179,7 @@
 
 					if(empty($error)){
 						$this->model->editById($data, $id);
-						$this->view->redirect('news/edit/'.$id);
+						$this->view->redirect('listpost');
 					}else {
 						$this->view->renderAdmin('news/edit');
 					}

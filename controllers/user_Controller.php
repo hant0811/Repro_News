@@ -36,7 +36,7 @@
 						$_SESSION['role'] = $row['role']; 
 						$_SESSION['user'] = $row['ID']; 
 						$_SESSION['time'] = time();
-						$this->view->redirect("home/index");
+						$this->view->redirect();
 						
 					}
 					else {
